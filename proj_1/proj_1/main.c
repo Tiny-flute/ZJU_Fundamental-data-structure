@@ -6,15 +6,23 @@
 //
 
 #include <stdio.h>
+#include <time.h>
 double AlgorithmOne(double x, int n);
 double IterationAlgorithm(double x, int n);
 double RecursiveAlgorithm(double x, int n);
 int Test(int n);
-
+clock_t start, stop;
+double duration;
 enum parity {odd, even};     //enumerator to better express
 int main(void)
 {
-    // insert test codes here
+    int i = 0;
+    start = clock();
+    for(;i <= 10000;i++)              //do iterations , change upper bounder can change iteration times
+    AlgorithmOne(1.0001, 100000);      //change  function can change the tested function
+    stop = clock();
+    duration = ((double)(stop - start) / CLK_TCK);  //calculate time duration
+    printf("%d", duration);          //print result to the monitor
     return 0;
 }
 double AlgorithmOne(double x, int n)   //x for base and n for exponent
@@ -58,7 +66,7 @@ double IterationAlgorithm(double x, int n) // parameters are the sam e as above
     }
     return result;
 }
-double RecursiveAlgorithm(double x, int n)
+double RecursiveAlgorithm(double x, int n) //x for base and n for exponent
 {
     if(0 == n)
         return 1.0;       //test for n^0, 0^0 is not considered here.
@@ -67,3 +75,4 @@ double RecursiveAlgorithm(double x, int n)
     else
         return RecursiveAlgorithm(x * x, n / 2);
 }
+
