@@ -1,10 +1,3 @@
-//
-//  main.c
-//  week_1
-//
-//  Created by 曲耕余 on 2021/10/3.
-//
-
 #include <stdio.h>
 #include <time.h>
 double AlgorithmOne(double x, int n);
@@ -75,4 +68,5 @@ double RecursiveAlgorithm(double x, int n) //x for base and n for exponent
     else
         return RecursiveAlgorithm(x * x, n / 2);
 }
+
 

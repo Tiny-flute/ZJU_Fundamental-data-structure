@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EABB5C73270D8F39001A1651 /* PTA_practice.c in Sources */ = {isa = PBXBuildFile; fileRef = EABB5C72270D8F39001A1651 /* PTA_practice.c */; };
+		EABB5C76270DA9AC001A1651 /* reverse linked list.c in Sources */ = {isa = PBXBuildFile; fileRef = EABB5C75270DA9AC001A1651 /* reverse linked list.c */; };
 		EAE3EDCE2709A8BD00D0DDA3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EAE3EDCD2709A8BD00D0DDA3 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EABB5C71270D8F39001A1651 /* PTA_practice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTA_practice.h; sourceTree = "<group>"; };
+		EABB5C72270D8F39001A1651 /* PTA_practice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PTA_practice.c; sourceTree = "<group>"; };
+		EABB5C75270DA9AC001A1651 /* reverse linked list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "reverse linked list.c"; sourceTree = "<group>"; };
+		EABB5C78270DAB04001A1651 /* reverse linked list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "reverse linked list.h"; sourceTree = "<group>"; };
 		EAE3EDCA2709A8BD00D0DDA3 /* week_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = week_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE3EDCD2709A8BD00D0DDA3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +47,7 @@
 		EAE3EDC12709A8BD00D0DDA3 = {
 			isa = PBXGroup;
 			children = (
-				EAE3EDCC2709A8BD00D0DDA3 /* week_1 */,
+				EAE3EDCC2709A8BD00D0DDA3 /* proj_1 */,
 				EAE3EDCB2709A8BD00D0DDA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +60,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EAE3EDCC2709A8BD00D0DDA3 /* week_1 */ = {
+		EAE3EDCC2709A8BD00D0DDA3 /* proj_1 */ = {
 			isa = PBXGroup;
 			children = (
 				EAE3EDCD2709A8BD00D0DDA3 /* main.c */,
+				EABB5C71270D8F39001A1651 /* PTA_practice.h */,
+				EABB5C72270D8F39001A1651 /* PTA_practice.c */,
+				EABB5C75270DA9AC001A1651 /* reverse linked list.c */,
+				EABB5C78270DAB04001A1651 /* reverse linked list.h */,
 			);
-			path = week_1;
+			path = proj_1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EAE3EDC52709A8BD00D0DDA3 /* Build configuration list for PBXProject "week_1" */;
+			buildConfigurationList = EAE3EDC52709A8BD00D0DDA3 /* Build configuration list for PBXProject "proj_1" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABB5C73270D8F39001A1651 /* PTA_practice.c in Sources */,
+				EABB5C76270DA9AC001A1651 /* reverse linked list.c in Sources */,
 				EAE3EDCE2709A8BD00D0DDA3 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +271,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EAE3EDC52709A8BD00D0DDA3 /* Build configuration list for PBXProject "week_1" */ = {
+		EAE3EDC52709A8BD00D0DDA3 /* Build configuration list for PBXProject "proj_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EAE3EDCF2709A8BD00D0DDA3 /* Debug */,
